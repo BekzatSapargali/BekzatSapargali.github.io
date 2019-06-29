@@ -1,0 +1,72 @@
+/*Bekzat Sapargaliev личный сайт веб-разработчика*/
+@charset 'UTF-8';
+
+*{
+
+  font-family: 'SF UI Text';
+  font-weight: 400;
+
+}
+
+::selection{
+
+  background:#121212;
+  color:white;
+
+}
+
+body{
+
+	margin:0;
+	box-sizing: border-box;
+	width:100%;
+  overflow-x: hidden;
+  background: white;
+
+}
+
+/* SF apple system design */
+
+/* Light */@font-face {font-family: 'SF UI Text';font-weight: 300;src: url("../fonts/SFUIDisplay-Light.woff") format('woff');}
+
+/* Regular */@font-face {font-family: 'SF UI Text';font-weight: 400;src: url("../fonts/SFUIDisplay-Regular.woff") format('woff');}
+
+/* Medium */@font-face {font-family: 'SF UI Text';font-weight: 500;src: url("../fonts/SFUIDisplay-Medium.woff") format('woff');}
+
+/* Semio-bold */@font-face {font-family: 'SF UI Text';font-weight: 600;src: url("../fonts/SFUIDisplay-Semibold.woff") format('woff');}
+
+/* bold */@font-face {font-family: 'SF UI Text';font-weight: 700;src: url("../fonts/SFUIDisplay-Bold.woff") format('woff');}
+
+/* всякая всячина */
+
+.line{
+
+  height: 1.5px;
+  width:100%;
+  text-align:left;
+  display: block;
+  background:#121212;
+  margin-top:2px;margin-bottom:2px;
+
+}
+
+p{
+
+  font-size: 100%;
+
+}
+ .slick-prev:before,
+
+    .slick-next:before {
+
+      color: #121212;
+      font-size:25px;
+
+}
+
+.slick-prev, .slick-next{
+
+  height:25px;
+  width:25px;
+
+}

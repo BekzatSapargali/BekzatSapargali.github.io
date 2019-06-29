@@ -1,0 +1,388 @@
+@charset 'UTF-8';
+
+@media screen and (max-width: 1200px){
+
+	/* css-элементы с фикс.контейнерами */
+
+	.information-block{
+		width:1100px;
+	}
+
+	.page-info-container{
+		width:1100px;
+	}
+
+	.portfolio-container{
+		width:1100px;
+	}
+
+	.otzivi-container{
+		width:1100px;
+	}
+
+	.otzivi-container-sm{
+		width:1100px;
+	}
+
+	.form-contacts-container{
+		width:1100px;
+	}
+
+}
+@media screen and (max-width: 1100px){
+
+	/* css-элементы с фикс.контейнерами */
+
+	.information-block{
+		width:1024px;
+	}
+
+	.page-info-container{
+		width:1024px;
+	}
+
+	.portfolio-container{
+		width:1024px;
+	}
+
+	.otzivi-container{
+		width:1024px;
+	}
+
+	.otzivi-container-sm{
+		width:1024px;
+	}
+
+	.form-contacts-container{
+		width:1024px;
+	}
+
+}
+
+/* с этого разрешения контенты фиксируются процентами */
+
+@media screen and (max-width:1024px){
+
+	.information-block{
+		width:91%;
+	}
+
+	.page-info-container{
+		width:91%;
+	}
+
+	.portfolio-container{
+		width:91%;
+	}
+
+	.otzivi-container{
+		width:91%;
+	}
+
+	.otzivi-container-sm{
+		width:91%;
+	}
+
+	.form-contacts-container{
+		width:91%;
+	}
+
+	.content-center-text{
+		font-size:190%;
+	}
+
+	.menu{
+		width:50%;
+	}
+
+}
+@media screen and (max-width:900px){
+
+	/* адаптация первого экрана */
+
+	.content-center-text{
+		font-size:200%;
+		text-align:center;
+		left:50%;
+		width:95%;
+		transform: translate(-50%,-50%);
+	}
+
+	.linetext{
+		width:90%;
+	}
+
+	.menu-burger{
+		left:97%; top:2%;
+		transform: translateX(-97%) translateY(-2%);
+		position: fixed;
+		z-index: 3;
+	}
+
+}
+@media screen and (max-width:600px){
+
+	.content-page-one{
+
+		width:100%;
+		height:82vh;
+		float:left;
+		position: relative;
+		background-size: center;
+		background-attachment: fixed;
+		background-size:100vh;
+
+	}
+
+	.content-center-text l{
+
+		font-size: 75%;
+		line-height: 1.35;
+
+	}
+
+	.menu{
+		width:100%;
+	}
+
+	.menu a{
+
+		color:#121212;
+		text-decoration: none;
+		font-size:150%;
+		font-weight: 300;
+		margin-top:2%;
+		width:100%;
+		display: inline-block;
+		text-align: left;
+		transition:0.25s all;
+		margin-left:2%;
+	}
+
+	.social-media a{
+
+		text-align: left;
+		width:auto;
+
+	}
+
+	.social-media{
+
+		width:100%;
+		float:left;
+
+	}
+
+	.social-media i{
+
+		font-size:105%;
+	}
+
+	.about-menu{
+
+		font-size: 115%;
+		left:50%;
+		top:95%;
+		font-weight: 400;
+		text-align:center;
+		transform: translate(-50%,-95%);
+
+	}
+
+	.menu img{
+
+		width:40px;
+		height:40px;
+
+	}
+
+	.preview-skil{
+
+		width:100%;
+		padding-top:2%;
+		padding-bottom: 2%;
+
+	}
+
+	.preview-skil:nth-of-type(2n){
+
+		border:none;
+		border-bottom: 0.5px solid silver;
+		border-top:0.5px solid silver
+
+	}
+
+	.tabs{
+
+		width:100%;
+		border-bottom:0.5px solid silver;
+
+	}
+
+	.tabs-info{
+
+		width:98%;
+		border:none;
+		padding-left:0;
+		padding:2%;
+
+	}
+
+	.tabs-info img{
+
+		display: none;
+		width:70%;
+		float:none;
+		margin:0 auto;
+
+	}
+
+	.tabs-info p{
+
+		width:100%;
+		font-size:105%;
+
+	}
+
+	.job-post{
+
+		width:98%;
+		margin-left:1%;
+		margin-right:1%;
+		margin-top:2%;
+		margin-bottom: 2%;
+
+	}
+
+	.content-page-for{
+
+		border-top:0.5px solid silver;
+
+	}
+
+	.otzivi-container{
+
+		width:84%;
+		margin:0 auto;
+
+	}
+
+	.otziv-post{
+
+		width:auto;
+		margin:0 auto;
+		margin-left:0;
+		margin-right:0;
+
+	}
+
+	.form{
+
+		width:100%;
+		border-left:none;
+		border-bottom:0.5px solid silver;
+		padding-bottom:8%;
+
+	}
+
+	.form input{
+
+		width:93%;
+
+	}
+
+	.contacts{
+
+		width:100%;
+
+	}
+
+	.content-page-for{
+
+		padding-bottom: 4%;
+		border-bottom:0.5px solid silver;
+
+	}	
+
+	.content-page-three{
+
+		padding-top:2%;
+		padding-bottom: 4%;
+
+	}
+
+}
+@media screen and (max-width: 320px){
+
+	.content-page-one{
+
+		height:91vh;
+
+	}
+
+	.content-page-one{
+
+		font-size:100%;
+	}
+
+	.content-center-text{
+
+		font-size: 180%;
+	}
+
+	.content-page-one l{
+
+		line-height: 1.4;
+		font-weight: 500;
+
+	}
+
+	.menu a{
+
+	color:#121212;
+	text-decoration: none;
+	font-size:150%;
+	font-weight: 300;
+	margin-top:2%;
+	margin-left:2%;
+	width:100%;
+	display: inline-block;
+	text-align: left;
+	transition:0.25s all;
+
+	}
+
+	.social-media a{
+
+	text-align: center;
+	width:auto;
+
+	}
+
+	.social-media{
+
+	text-align: left;
+	width:100%;	
+	font-weight: 300;
+
+	}
+
+	.social-media i{
+
+		font-size:105%;
+
+	}
+
+	.about-menu{
+
+		position: absolute;
+		font-size: 115%;
+		left:50%;
+		top:97%;
+		font-weight: 400;
+		text-align:center;
+		transform: translate(-50%,-97%);
+
+	}
+	
+}
