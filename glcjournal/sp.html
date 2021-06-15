@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GLCJorunal</title>
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="style/restyle.css">
+
+	<link rel="icon" href="media/logo/glclogo.jpg">
+    <link rel="stylesheet" href="style/fontawesome-all.min.css">
+	<link href="media/sanfrancisco.ttf">
+</head>
+<body>
+	<div id="p_prldr"><div class="contpre"><span class="svg_anm"></div></span></div>
+	<section class="wrapper">	
+	<!-- контейнер добавить статью -->
+     <div class="add-state">
+     <div class="contadd"> 
+         <p class="close_add_state">
+             <i class="fas fa-times"></i>
+         </p>
+          <div class="form_add_state">
+             <div class="head_add_state">
+                GLCjournal - Добавить статью
+          </div>
+		    <form action="upload.php" class="form_add_state1" name="upload" method="POST" ENCTYPE="multipart/form-data">
+            <input type="text" class="focinp" name="author" placeholder="Автор"> <br/>
+            <input type="text" name="title" placeholder="Заголовк">
+            <input type="file" name="userfile" placeholder="Превью"><br> 
+            <textarea name="text" id="froala-editor" cols="30" rows="10" placeholder="Статья"></textarea>
+			<button type="submit" name="create" value="Опубликовать">Опубликовать</button>
+			</form>
+         </div>
+     </div>
+</div>  <!-- контейнер добавить статью -->
+ <section class="header">
+     <div class="hide-search">
+     	<input type="text" placeholder="Я ищу статью про <enter>"> 
+     	<i class="fas fa-times" id="close"></i>
+     	<button> <i class="fas fa-search"></i></button>
+     </div>	
+        <div class="container">
+        <div class="logo">
+        <a href="index.html" title="beta версия">
+		<l class="l1">GLC</l><l class="l2"> Journal </l>    
+    	</a>
+        </div>
+     	<div class="menu">
+            <a href="index.html"><i class="fas fa-newspaper"></i> Лента</a>
+            <a href="films.html"><i class="fas fa-video"></i> Видео</a>
+            <a href="sp.html"><i class="fas fa-headphones"></i> Подкасты</a>
+            <a href="sp.html"><i class="fas fa-users"></i> Я думаю</a>
+             <a href="sp.html"><i class="far fa-circle"></i> Спецпроекты</a>
+            <div class="close-menu"><i class="fas fa-times"></i></div>
+     	</div>
+     	<div class="search">
+     		<i class="fas fa-search" id="go"></i>
+     	    <i class="fas fa-pencil-alt" id="add"></i>
+            <i class="far fa-moon" id="dark-mode"></i>  <!-- это даркмод, я его сам добавлю -->
+            <i class="fas fa-align-right" id="getmenu"></i>
+     	</div>
+     </div>
+ </section> <!-- шапка сайта (меню) -->
+
+
+ 	<!-- контентая часть сайта (будут грузиться посты) --> 
+<div class="content"> 
+ 
+  <div class="row-content-once">
+      тут будут выводится подкасты
+      также как и посты с видео только вместо видео будут аудиофайлы
+      а mp4 файлы будут хранится так же как и картинки в папке
+      <br>
+      тут нужно обсудить 
+
+  </div>
+
+</div>
+
+<div class="footer"> <!-- подвал сайта -->
+    <div class="container">
+    <div class="col1">
+        GLCJournal © 2018 <br>
+        Основатель, дизайнер, CEO
+        <br>
+        <a href="https://vk.com/avgn2015" target="blank">Сапаргалиев Бекзат</a>
+        <br>
+        <span class="razrabline"></span>
+        Штатный программист, разработчик 
+        <br>
+        <a href="https://vk.com/arslanbekovdi">Дима Арсланбеков</a>
+    </div> 
+    <div class="col2">
+        GLCJournal в соц.сетях <br>
+        <a href="https://vk.com/glcjournal"><i class="fab fa-vk"></i></a>
+        <a href="https://twitter.com/mYv62pSDMJ62dPz"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCNC_Wy3BSwikFmxCOcAzXfA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+        <br>
+        <a href="about/regulations.php" class="footer-link">
+            Правила
+        </a>
+        <br>
+        <a href="about/policy.php" class="footer-link">
+            Политика конфиденциальности
+        </a>
+        <br>
+        <a href="about/about.php" class="footer-link">
+            О проекте
+        </a>
+    </div>
+    <div class="col3">
+        #GLCjournal
+        <br>
+        Созидайте дав волю
+        <br>
+        вашему подсознанию
+        <br>    
+        И лишь оно истинное лицо наше.
+    </div>
+	</div>
+</div> <!-- подвал сайта (не убирать) -->
+	</section> <!-- wrapper контейнер для сайта -->
+
+
+
+
+	<!-- JavaScript скрипты нужна оптимизация -->
+ 	<script src="javascript/jquery-3.3.1.min.js"></script>
+ 	<script src="javascript/tinymce.min.js"></script> <!-- плагин для библиотеки текстового редактора -->
+ 	<script src="javascript/ru.js"></script> <!-- русификация текстового редактора (так как он пендоский) -->
+	<script src="javascript/app.js"></script> <!-- файл с моими скриптами -->
+	<!-- прелоадер, экран загрузки сайта -->
+	<script>$(window).on('load', function () {var $preloader = $('#p_prldr'),$svg_anm   = $preloader.find('.svg_anm');$svg_anm.fadeOut();$preloader.delay(500).fadeOut('slow');});</script>
+</body>
+</html>

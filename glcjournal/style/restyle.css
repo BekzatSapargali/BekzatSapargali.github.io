@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@font-face {
+src:url(../fonts/SFUIText-Light.ttf);
+font-family: 'San Francisco Text Light';
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+	src:url(../fonts/SFUIText-Regular.ttf);
+	font-family: 'San Francisco Text Regular';
+	font-weight: normal;
+	font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&subset=cyrillic,cyrillic-ext');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'San Francisco Text Regular';
+	font-size:100%;
+}
+input{
+	outline: none;
+	padding: 0.5%;
+	border:0.2px solid white;
+}
+button{
+	cursor: pointer;
+}
+*::selection {
+    background: white;
+    color:#121212;
+}
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background:#121212;
+}
+h1 {
+    font-size:24px;
+}
+h2{
+	font-size:22px;
+}
+h3{
+	font-size:20px;
+}
+h4{
+	font-size:18px;
+}
+h5{
+	font-size:16px;
+}
+h6{
+	font-size:14px;
+}
+.razrabline{
+	margin-top:3px;
+	margin-bottom: 3px;
+	display: block;
+	width:70%;
+	height:1.5px;
+	background:white;
+}
